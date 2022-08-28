@@ -17,18 +17,18 @@ export const Home = () =>{
     
     
 
-    const listaVagas = (vagas&& vagas.length > 1)?vagas.map((e,index)=>{
-        return(
-            <Vaga key={index}>{e.nome} em {e.empresa} - {e.data}</Vaga>
-        )
-    }):''
+    // const listaVagas = (vagas&& vagas.length > 1)?vagas.map((e,index)=>{
+    //     return(
+    //         <Vaga key={index}>{e.nome} em {e.empresa} - {e.data}</Vaga>
+    //     )
+    // }):''
 
     return ( 
     <Container>
         <Title>Vagas em Destaque</Title>
         <Emphasis/>
         <Title>Vagas Recentes</Title>
-        {listaVagas}
+    
     </Container>
     )
     
