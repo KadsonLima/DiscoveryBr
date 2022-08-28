@@ -17,11 +17,11 @@ export const Home = () =>{
     
     
 
-    const listaVagas = (vagas&& vagas.length > 1)&&vagas.map((e,index)=>{
+    const listaVagas = (vagas&& vagas.length > 1)?vagas.map((e,index)=>{
         return(
             <Vaga key={index}>{e.nome} em {e.empresa} - {e.data}</Vaga>
         )
-    })
+    }):''
 
     return ( 
     <Container>
@@ -36,6 +36,7 @@ export const Home = () =>{
 
 const Container = styled.div`
     width: 100%;
+    height: 100vh;
     display: flex;
     padding: 20px;
     flex-direction: column;
