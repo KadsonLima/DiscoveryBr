@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getVagas } from "../../../Services/api";
+import { VagasDestaques } from "./VagasDestaques";
 
 
 
@@ -26,7 +27,7 @@ export const Home = () =>{
     return ( 
     <Container>
         <Title>Vagas em Destaque</Title>
-        <Emphasis/>
+        <Emphasis><VagasDestaques/></Emphasis>
         <Title>Vagas Recentes</Title>
     
     </Container>
@@ -56,8 +57,9 @@ const Emphasis = styled.div`
     display: flex;
     height: 170px;
     background-color:#dddddd;
-    padding: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
+   
 `
 
 const Vaga = styled.div`
